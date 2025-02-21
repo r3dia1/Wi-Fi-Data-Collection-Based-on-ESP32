@@ -1,0 +1,18 @@
+[1/5] cmd.exe /C "cd /D D:\esp\WiFi\station\build\esp-idf\esptool_py && d:\esp\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/esp/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/esp/WiFi/station/build/partition_table/partition-table.bin D:/esp/WiFi/station/build/wifi_station.bin"
+wifi_station.bin binary size 0xb4320 bytes. Smallest app partition is 0x100000 bytes. 0x4bce0 bytes (30%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\esp\WiFi\station\build\bootloader\esp-idf\esptool_py && d:\esp\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/esp/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/esp/WiFi/station/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D D:\esp\esp-idf-v5.3\components\esptool_py && D:\esp\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/esp/esp-idf-v5.3 -D SERIAL_esptool.py --chip esp32 -p PORT -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 wifi_station.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port PORT
+
+A fatal error occurred: Could not open PORT, the port is busy or doesn't exist.
+(could not open port 'PORT': FileNotFoundError(2, '系統找不到指定的檔案。', None, 2))
+
+Hint: Check if the port is correct and ESP connected
+
+TOOL=d:/esp/.espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;D:/esp/esp-idf-v5.3/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/esp/WiFi/station/build -P D:/esp/esp-idf-v5.3/components/esptool_py/run_serial_tool.cmake"
+FAILED: CMakeFiles/flash D:/esp/WiFi/station/build/CMakeFiles/flash 
+cmd.exe /C "cd /D D:\esp\esp-idf-v5.3\components\esptool_py && D:\esp\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/esp/esp-idf-v5.3 -D SERIAL_TOOL=d:/esp/.espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;D:/esp/esp-idf-v5.3/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/esp/WiFi/station/build -P D:/esp/esp-idf-v5.3/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.

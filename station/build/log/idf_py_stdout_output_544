@@ -1,0 +1,211 @@
+�xx�x���x�x�x�xxсets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 15 2024 11:01:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ed10h (126224) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=0002ed38 vaddr=3ffb0000 size=012e0h (  4832) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=7a188h (500104) map[0m
+[0;32mI (325) esp_image: segment 3: paddr=000aa1b0 vaddr=3ffb12e0 size=02b48h ( 11080) load[0m
+[0;32mI (329) esp_image: segment 4: paddr=000acd00 vaddr=40080000 size=17198h ( 94616) load[0m
+[0;32mI (379) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (379) boot: Disabling RNG early entropy source...[0m
+[0;32mI (391) cpu_start: Multicore app[0m
+[0;32mI (400) cpu_start: Pro cpu start user code[0m
+[0;32mI (400) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (400) app_init: Application information:[0m
+[0;32mI (403) app_init: Project name:     wifi_station[0m
+[0;32mI (408) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Jan 15 2025 16:44:48[0m
+[0;32mI (418) app_init: ELF file SHA256:  99ca106eb...[0m
+[0;32mI (424) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (429) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (434) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (438) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (444) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (451) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (457) heap_init: At 3FFB8000 len 00028000 (160 KiB): DRAM[0m
+[0;32mI (463) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (476) heap_init: At 40097198 len 00008E68 (35 KiB): IRAM[0m
+[0;32mI (483) spi_flash: detected chip: generic[0m
+[0;32mI (486) spi_flash: flash io: dio[0m
+[0;33mW (490) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (504) main_task: Started on CPU0[0m
+[0;32mI (514) main_task: Calling app_main()[0m
+[0;32mI (534) wifi station: ESP_WIFI_MODE_STA[0m
+I (554) wifi:wifi driver task: 3ffbff54, prio:23, stack:6656, core=0
+I (564) wifi:wifi firmware version: 0caa81945
+I (564) wifi:wifi certification version: v7.0
+I (564) wifi:config NVS flash: enabled
+I (564) wifi:config nano formating: disabled
+I (574) wifi:Init data frame dynamic rx buffer num: 32
+I (574) wifi:Init static rx mgmt buffer num: 5
+I (584) wifi:Init management short buffer num: 32
+I (584) wifi:Init dynamic tx buffer num: 32
+I (584) wifi:Init static rx buffer size: 1600
+I (594) wifi:Init static rx buffer num: 10
+I (594) wifi:Init dynamic rx buffer num: 32
+[0;32mI (604) wifi_init: rx ba win: 6[0m
+[0;32mI (604) wifi_init: accept mbox: 6[0m
+[0;32mI (604) wifi_init: tcpip mbox: 32[0m
+[0;32mI (614) wifi_init: udp mbox: 6[0m
+[0;32mI (614) wifi_init: tcp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp tx win: 5760[0m
+[0;32mI (624) wifi_init: tcp rx win: 5760[0m
+[0;32mI (624) wifi_init: tcp mss: 1440[0m
+[0;32mI (634) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (634) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (644) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (734) wifi:mode : sta (d0:ef:76:ef:f1:7c)
+I (734) wifi:enable tsf
+[0;32mI (734) wifi station: wifi_init_sta finished.[0m
+I (744) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (744) wifi:state: init -> auth (0xb0)
+I (744) wifi:state: auth -> assoc (0x0)
+I (754) wifi:state: assoc -> run (0x10)
+I (764) wifi:<ba-add>idx:0 (ifx:0, cc:5d:4e:a7:4d:7c), tid:0, ssn:0, winSize:64
+I (784) wifi:connected with 602, aid = 3, channel 1, BW20, bssid = cc:5d:4e:a7:4d:7c
+I (784) wifi:security: WPA2-PSK, phy: bgn, rssi: -35
+I (794) wifi:pm start, type: 1
+
+I (794) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (864) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1804) esp_netif_handlers: sta ip: 192.168.1.106, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1804) wifi station: got ip:192.168.1.106[0m
+[0;32mI (1804) wifi station: connected to ap SSID:602 password:78694724[0m
+Router number = 8
+RSSI for Router 1: -36
+RSSI for Router 2: -62
+RSSI for Router 3: -77
+Router number = 7
+RSSI for Router 1: -42
+RSSI for Router 2: -73
+RSSI for Router 3: -83
+Router number = 7
+RSSI for Router 1: -40
+RSSI for Router 2: -73
+RSSI for Router 3: -80
+Router number = 9
+RSSI for Router 1: -35
+RSSI for Router 2: -66
+RSSI for Router 3: -81
+Router number = 9
+RSSI for Router 1: -38
+RSSI for Router 2: -67
+RSSI for Router 3: -79
+Router number = 9
+RSSI for Router 1: -37
+RSSI for Router 2: -67
+RSSI for Router 3: -82
+Router number = 10
+RSSI for Router 1: -36
+RSSI for Router 2: -67
+RSSI for Router 3: -84
+Router number = 7
+RSSI for Router 1: -40
+RSSI for Router 2: -67
+RSSI for Router 3: -81
+Router number = 9
+RSSI for Router 1: -37
+RSSI for Router 2: -68
+RSSI for Router 3: -80
+Router number = 9
+RSSI for Router 1: -38
+RSSI for Router 2: -68
+RSSI for Router 3: -79
+start!
+[0;32mI (30814) main_task: Returned from app_main()[0m
+[0;32mI (30874) wifi station: Successfully connected[0m
+datalen = 10
+num[2] = -77
+len = 9
+str = -36
+str = -36-62
+str = -36-62-77
+9
+datalen = 10
+num[2] = -83
+len = 9
+str = -42
+str = -42-73
+str = -42-73-83
+9
+datalen = 10
+num[2] = -80
+len = 9
+str = -40
+str = -40-73
+str = -40-73-80
+9
+datalen = 10
+num[2] = -81
+len = 9
+str = -35
+str = -35-66
+str = -35-66-81
+9
+datalen = 10
+num[2] = -79
+len = 9
+str = -38
+str = -38-67
+str = -38-67-79
+9
+datalen = 10
+num[2] = -82
+len = 9
+str = -37
+str = -37-67
+str = -37-67-82
+9
+datalen = 10
+num[2] = -84
+len = 9
+str = -36
+str = -36-67
+str = -36-67-84
+9
+datalen = 10
+num[2] = -81
+len = 9
+str = -40
+str = -40-67
+str = -40-67-81
+9
+datalen = 10
+num[2] = -80
+len = 9
+str = -37
+str = -37-68
+str = -37-68-80
+9
+datalen = 10
+num[2] = -79
+len = 9
+str = -38
+str = -38-68
+str = -38-68-79
+9
+[0;31mE (50874) wifi station: Shutting down socket and restarting...[0m

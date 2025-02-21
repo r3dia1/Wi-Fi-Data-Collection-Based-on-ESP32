@@ -1,0 +1,25 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\esp\WiFi\station\build\bootloader\esp-idf\esptool_py && d:\esp\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/esp/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/esp/WiFi/station/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/station_example_main.c.obj
+D:/esp/WiFi/station/main/station_example_main.c: In function 'tcp_client_task':
+D:/esp/WiFi/station/main/station_example_main.c:317:10: warning: unused variable 'first' [-Wunused-variable]
+  317 |     bool first = true;
+      |          ^~~~~
+D:/esp/WiFi/station/main/station_example_main.c:316:18: warning: unused variable 'pastRssival' [-Wunused-variable]
+  316 |     int rssival, pastRssival;
+      |                  ^~~~~~~~~~~
+D:/esp/WiFi/station/main/station_example_main.c:316:9: warning: unused variable 'rssival' [-Wunused-variable]
+  316 |     int rssival, pastRssival;
+      |         ^~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable wifi_station.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/esp/WiFi/station/build/wifi_station.bin
+[7/7] cmd.exe /C "cd /D D:\esp\WiFi\station\build\esp-idf\esptool_py && d:\esp\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/esp/esp-idf-v5.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/esp/WiFi/station/build/partition_table/partition-table.bin D:/esp/WiFi/station/build/wifi_station.bin"
+wifi_station.bin binary size 0xb4350 bytes. Smallest app partition is 0x100000 bytes. 0x4bcb0 bytes (30%) free.

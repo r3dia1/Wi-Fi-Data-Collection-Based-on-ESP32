@@ -1,0 +1,88 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000117d: __swrite in ROM
+0x4000117d: __swrite in ROM
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008e8b4: insert_free_block at D:/esp/esp-idf-v5.3/components/heap/tlsf/tlsf.c:362
+ (inlined by) block_insert at D:/esp/esp-idf-v5.3/components/heap/tlsf/tlsf.c:388
+ (inlined by) tlsf_free at D:/esp/esp-idf-v5.3/components/heap/tlsf/tlsf.c:1205
+[0m
+[0;33m0x4008e8b1: insert_free_block at D:/esp/esp-idf-v5.3/components/heap/tlsf/tlsf.c:361
+ (inlined by) block_insert at D:/esp/esp-idf-v5.3/components/heap/tlsf/tlsf.c:388
+ (inlined by) tlsf_free at D:/esp/esp-idf-v5.3/components/heap/tlsf/tlsf.c:1205
+0x4008e3ac: multi_heap_free_impl at D:/esp/esp-idf-v5.3/components/heap/multi_heap.c:235
+0x40082246: heap_caps_free at D:/esp/esp-idf-v5.3/components/heap/heap_caps_base.c:70
+0x4008a551: vPortFree at D:/esp/esp-idf-v5.3/components/freertos/heap_idf.c:63
+0x4008ad95: prvDeleteTCB at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:4914
+0x4008ae46: prvCheckTasksWaitingTermination at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:4597
+0x4008af77: prvIdleTask at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:4295
+0x40089eb9: vPortTaskWrapper at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081a42: panic_abort at D:/esp/esp-idf-v5.3/components/esp_system/panic.c:463
+0x400893ad: esp_system_abort at D:/esp/esp-idf-v5.3/components/esp_system/port/esp_system_chip.c:92
+0x4008a2a6: vApplicationStackOverflowHook at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:553
+0x4008b5df: vTaskSwitchContext at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008a3b0: _frxt_dispatch at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008a362: _frxt_int_exit at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081a42: panic_abort at D:/esp/esp-idf-v5.3/components/esp_system/panic.c:463
+0x400893ad: esp_system_abort at D:/esp/esp-idf-v5.3/components/esp_system/port/esp_system_chip.c:92
+0x4008a2a6: vApplicationStackOverflowHook at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:553
+0x4008b5df: vTaskSwitchContext at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008a3b0: _frxt_dispatch at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008a362: _frxt_int_exit at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081a42: panic_abort at D:/esp/esp-idf-v5.3/components/esp_system/panic.c:463
+0x400893ad: esp_system_abort at D:/esp/esp-idf-v5.3/components/esp_system/port/esp_system_chip.c:92
+0x4008a2a6: vApplicationStackOverflowHook at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:553
+0x4008b5df: vTaskSwitchContext at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008a3b0: _frxt_dispatch at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008a362: _frxt_int_exit at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081a42: panic_abort at D:/esp/esp-idf-v5.3/components/esp_system/panic.c:463
+0x400893ad: esp_system_abort at D:/esp/esp-idf-v5.3/components/esp_system/port/esp_system_chip.c:92
+0x400910ed: __assert_func at D:/esp/esp-idf-v5.3/components/newlib/assert.c:80
+0x4008e526: tlsf_free at D:/esp/esp-idf-v5.3/components/heap/tlsf/tlsf.c:1201 (discriminator 1)
+0x4008e3ac: multi_heap_free_impl at D:/esp/esp-idf-v5.3/components/heap/multi_heap.c:235
+0x40082246: heap_caps_free at D:/esp/esp-idf-v5.3/components/heap/heap_caps_base.c:70
+0x4008a551: vPortFree at D:/esp/esp-idf-v5.3/components/freertos/heap_idf.c:63
+0x4008ad95: prvDeleteTCB at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:4914
+0x4008ae46: prvCheckTasksWaitingTermination at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:4597
+0x4008af77: prvIdleTask at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:4295
+0x40089eb9: vPortTaskWrapper at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081a42: panic_abort at D:/esp/esp-idf-v5.3/components/esp_system/panic.c:463
+0x400893ad: esp_system_abort at D:/esp/esp-idf-v5.3/components/esp_system/port/esp_system_chip.c:92
+0x4008a2a6: vApplicationStackOverflowHook at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:553
+0x4008b5df: vTaskSwitchContext at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008a3b0: _frxt_dispatch at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008a362: _frxt_int_exit at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081a42: panic_abort at D:/esp/esp-idf-v5.3/components/esp_system/panic.c:463
+0x400893ad: esp_system_abort at D:/esp/esp-idf-v5.3/components/esp_system/port/esp_system_chip.c:92
+0x4008a2a6: vApplicationStackOverflowHook at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:553
+0x4008b5df: vTaskSwitchContext at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008a3b0: _frxt_dispatch at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008a362: _frxt_int_exit at D:/esp/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
